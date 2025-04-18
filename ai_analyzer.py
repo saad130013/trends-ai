@@ -1,7 +1,6 @@
 from keybert import KeyBERT
 from sklearn.feature_extraction.text import CountVectorizer
 
-# استخدم نموذج KeyBERT مع CountVectorizer بدون أي اتصال خارجي
 kw_model = KeyBERT()
 
 def analyze_trends(trends, language="العربية"):

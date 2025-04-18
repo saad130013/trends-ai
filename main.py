@@ -2,7 +2,6 @@ import streamlit as st
 from trend_fetcher import get_trending_searches
 from ai_analyzer import analyze_trends
 
-# تهيئة واجهة المستخدم
 st.set_page_config(
     page_title="محلل الترندات الذكي",
     layout="wide",
@@ -14,10 +13,9 @@ st.markdown("""
 **مميزات التطبيق:**
 - تحليل ترندات Google Trends في الوقت الفعلي
 - دعم اللغتين العربية والإنجليزية
-- يعمل بدون اتصال بالإنترنت بعد تثبيت النماذج
+- يعمل بدون اتصال بالإنترنت بعد التثبيت
 """)
 
-# إعداد خيارات البلدان مع أعلامها
 COUNTRY_MAP = {
     "sa": "🇸🇦 السعودية",
     "us": "🇺🇸 أمريكا",
@@ -46,7 +44,6 @@ if st.button("بدء التحليل 🚀"):
         st.success(f"تم العثور على {len(trends)} ترندات")
         results = analyze_trends(trends, language)
         
-        # عرض النتائج بقالب احترافي
         for idx, item in enumerate(results, 1):
             with st.expander(f"الترند رقم {idx}: {item['keyword']}", expanded=True):
                 st.markdown(f"### التحليل:")
