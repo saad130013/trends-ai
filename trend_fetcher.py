@@ -6,5 +6,5 @@ def get_trending_searches(country_code):
         df = pytrends.trending_searches(pn=country_code.lower())
         return df[0].tolist()
     except Exception as e:
-        print(f"Error fetching trends: {e}")
+        print(f"خطأ في جلب الترندات: {e}")
         return []
