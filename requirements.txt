@@ -1,7 +1,7 @@
 streamlit
 pytrends
 keybert
-sentence-transformers
+sentence-transformers==2.2.2
 scikit-learn
-transformers
-torch
+transformers==4.30.1
+torch>=2.0.0
