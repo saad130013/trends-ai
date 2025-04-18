@@ -1,8 +1,8 @@
 from keybert import KeyBERT
 from sentence_transformers import SentenceTransformer
 
-# تحميل النموذج اللغوي يدويًا
-sentence_model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+# استخدم نموذجًا أخف أو تأكد من اسم النموذج بدقة
+sentence_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 kw_model = KeyBERT(model=sentence_model)
 
 def analyze_trends(trends, language):
