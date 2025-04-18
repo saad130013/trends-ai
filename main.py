@@ -3,8 +3,7 @@ from trend_fetcher import get_trending_searches
 from ai_analyzer import analyze_trends
 
 st.set_page_config(page_title="محلل الترندات", layout="wide")
-
-st.title("📈 محلل الترندات بالذكاء الاصطناعي (مفتوح المصدر)")
+st.title("📈 محلل الترندات بالذكاء الصناعي - نسخة بدون إنترنت")
 
 country = st.selectbox("اختر الدولة", ["SA", "US", "CN"])
 language = st.selectbox("اختر اللغة", ["العربية", "الإنجليزية"])
