@@ -1,0 +1,5 @@
+streamlit
+pytrends
+keybert
+sentence-transformers
+scikit-learn
